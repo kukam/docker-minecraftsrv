@@ -29,7 +29,7 @@ WORKDIR /app
 
 ENTRYPOINT ["/entrypoint.sh"]
 
-CMD [ "java", "-Xmx4096M", "-Xms1024M", "-Xmn512M", "-XX:PermSize=256M", "-XX:+AggressiveOpts", "-XX:+UseFastAccessorMethods", "-XX:+UseStringCache", "-XX:+OptimizeStringConcat", "-XX:+UseBiasedLocking", "-XX:MaxGCPauseMillis=10", "-XX:+CMSParallelRemarkEnabled", "-XX:+UseConcMarkSweepGC", "-XX:+CMSIncrementalPacing", "-Xincgc", "-Djava.net.preferIPv4Stack=true", "-Djline.terminal=jline.UnsupportedTerminal", "-jar", "/app/minecraftsrv.jar", "-o", "false", "nogui" ]
+CMD [ "java", "-Xmx4096M", "-Xms1024M", "-Xmn512M", "-XX:+AggressiveOpts", "-XX:+UseFastAccessorMethods", "-XX:+OptimizeStringConcat", "-XX:+UseBiasedLocking", "-XX:MaxGCPauseMillis=10", "-XX:+CMSParallelRemarkEnabled", "-XX:+UseConcMarkSweepGC", "-XX:+CMSIncrementalPacing", "-Xincgc", "-Djava.net.preferIPv4Stack=true", "-Djline.terminal=jline.UnsupportedTerminal", "-jar", "/app/minecraftsrv.jar", "-o", "false", "nogui" ]
 
 #    "-XX:ParallelGCThreads=10", 
 #    "-XX:ParallelGCThreads=2", 

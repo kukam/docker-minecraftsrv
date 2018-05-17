@@ -5,7 +5,7 @@ set -o pipefail
 
 if [ ! -f "/app/minecraftsrv-${MINECRAFT_SERVER_VERSION}.jar" ]; then
     wget --no-check-certificate "https://cdn.getbukkit.org/craftbukkit/craftbukkit-${MINECRAFT_SERVER_VERSION}.jar" -O "/app/minecraftsrv-${MINECRAFT_SERVER_VERSION}.jar"
-    ln -sf "/app/minecraftsrv-${MINECRAFT_SERVER_VERSION}.jar" "/app/minecraftsrv.jar"
+    ln -sf "minecraftsrv-${MINECRAFT_SERVER_VERSION}.jar" "minecraftsrv.jar"
 fi
 
 if [[ ${MINECRAFT_SERVER_AGREE_EULA} == "true" ]]; then
